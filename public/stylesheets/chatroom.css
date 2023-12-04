@@ -1,0 +1,56 @@
+/* Ensure the body has no margin to prevent any unwanted space around the edges */
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif; /* Use the Muli font */
+    background-color: #121212; /* Sets a dark background color */
+    color: #ffffff; /* Sets the text color to white for contrast */
+}
+
+/* Style the form container */
+#send-container {
+    max-width: 600px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form and give some space from top and bottom */
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space between elements */
+    background: #222; /* Dark background for the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Style the message input */
+#message-input {
+    flex-grow: 1; /* Let the input take up as much space as possible */
+    margin-right: 10px; /* Add some space between the input and the button */
+    padding: 10px; /* Padding inside the input */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Rounded corners for the input */
+    background: #333; /* Slightly lighter background for the input */
+    color: #ddd; /* Color of the input text */
+}
+
+/* Style the send button */
+#send-button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    background: #4CAF50; /* A green background for the button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#send-button:hover {
+    background-color: #45a049; /* Darken the button when hovering */
+}
+
+/* Style the message container */
+#message-container {
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    max-width: 600px; /* Maximum width of the message container */
+    height: calc(100vh - 160px); /* Height is set to fill the screen */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    background: #121212; /* Same as body background */
+}
